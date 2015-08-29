@@ -52,12 +52,12 @@ class UltraMagicString(object):
         return self.value.split(*args, **kw)
 
 if sys.version_info[0] >= 3 :
-    long_description = u'\n\n'.join((
+    long_description = '\n\n'.join((
         open(README_PATH, 'r').read(),
         open(CHANGES_PATH, 'r').read(),
     ))
 else :
-    long_description = u'\n\n'.join((
+    long_description = '\n\n'.join((
         open(README_PATH, 'r').read().decode('utf-8'),
         open(CHANGES_PATH, 'r').read().decode('utf-8'),
     ))
